@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnGo = new System.Windows.Forms.Button();
+            this.txtShow = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btnGo
+            // 
+            this.btnGo.Location = new System.Drawing.Point(94, 143);
+            this.btnGo.Name = "btnGo";
+            this.btnGo.Size = new System.Drawing.Size(168, 69);
+            this.btnGo.TabIndex = 0;
+            this.btnGo.Text = "啟動";
+            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
+            // 
+            // txtShow
+            // 
+            this.txtShow.Location = new System.Drawing.Point(367, 167);
+            this.txtShow.Name = "txtShow";
+            this.txtShow.Size = new System.Drawing.Size(310, 25);
+            this.txtShow.TabIndex = 1;
+            this.txtShow.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtShow);
+            this.Controls.Add(this.btnGo);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnGo;
+        private System.Windows.Forms.TextBox txtShow;
     }
 }
 
